@@ -1,0 +1,66 @@
+<!-- Quick Quiz: 
+Without using br tag, write a vertically aligned form asking for name, city and everyone must comment-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form For The First Breath CME</title>
+    <link rel="stylesheet" href="quizstyle.css">
+</head>
+
+<body>
+
+    <h3>Feedback Form For The First Breath Conference</h3>
+    <form>
+        <label for="User_Name">Username:</label>
+        <input type="text" name="username" placeholder="Enter your name" id="username">
+
+        <div>
+            <label for="Gender">Select Your Gender:</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+
+
+
+        <div>
+            <label for="Primary_Email">Primary Email:</label>
+            <input type="email" name="email" placeholder="Enter email" id="useremail">
+        </div>
+
+
+
+
+        <div>
+            <label for="Alternate_Email">Alternate Email:</label>
+            <input type="email" name="email2" placeholder="Enter alternate email" id="email2">
+        </div>
+
+
+
+        <div>
+            <label for="City">City:</label>
+            <input type="text" name="city" placeholder="Enter city" id="city">
+        </div>
+
+
+
+        <div>
+            <label for="Comments">Your valueable feedback</label>
+        </div>
+        <div>
+            <textarea></textarea>
+        </div>
+        <input type="submit">
+        <input type="reset">
+        
+    </form>
+</body>
+
+</html>
