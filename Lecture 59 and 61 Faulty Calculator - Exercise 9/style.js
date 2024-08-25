@@ -1,41 +1,37 @@
-const choice = prompt("Enter what operation you want to performs: \n1. Addition \n2. Subtraction \n3. Multiplication \n4. Division");
+// /* Create a faulty calculator using JavaScript
 
-if(choice === null || choice === "")
-{
-    console.log("Please enter a valid number.")
+// This faulty calculator does following:
+// 1. It takes two numbers as input from the user
+// 2. It perfoms wrong operations as follows:
+
+// + ---> -
+// * ---> +
+// - ---> /
+// / ---> **
+
+// It performs wrong operation 10% of the times
+
+// */
+
+let random = Math.random()
+console.log(random)
+let a = prompt("Enter first number:");
+let b = prompt("Enter operations (+, -, *, /):");
+let c = prompt("Enter second number:");
+
+let obj = {
+    "+": "-",
+    "*": "+",
+    "-": "/",
+    "/": "**",
 }
 
+if(random>0.1)
+{
+    alert(`Result is ${eval(`${a} ${b} ${c}`)}`);
+}
 else{
-    let num1 = parseFloat(prompt("Enter first number:"));
-    let num2 = parseFloat(prompt("Enter second number:"));
-
-    let result = random.math();
-
-    switch(choice){
-
-    case "1":
-        result = num1 + num2;
-        break;
-
-    case "2":
-        result = num1 - num2;
-        break;
-
-    case "3":
-        result = num1 * num2;
-        break;
-
-    case "4":
-        result = num1 / num2;
-        break;
-
-    default:
-        console.log("Invalid Choice.");
-    }
-
-if(result !== undefined)
-    {
-        console.log("Result:", result);
-    }
+    b = obj[b]
+    alert(`Result is ${eval(`${a} ${b} ${c}`)}`)
 
 }
