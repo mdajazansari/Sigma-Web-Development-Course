@@ -1,0 +1,41 @@
+<!-- Refer this video for JS: https://www.youtube.com/watch?v=KB7GzBv5p4Q&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=71  -->
+<!-- 02:59 Insert and remove elements in JavaScript
+05:58 Understanding innerHTML, outerHTML, tagName, nodeName, textContent, hidden attribute, and changing innerHTML using JavaScript
+08:57 Using methods like .hasAttribute, getAttribute, setAttribute, and removeAttribute in JavaScript
+11:56 JavaScript allows you to insert and remove elements on a website.
+14:55 Various methods for inserting and appending elements in JavaScript
+17:54 Inserting and Removing Elements using JavaScript
+20:53 Adding and removing elements in JavaScript
+23:48 Toggle method allows for easy addition and removal of elements using one line of JavaScript. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container red bg-green">
+        <div class="box" style="display: flex;" data-createdby="harry" data-conceptby="rohan" >Hey I am a box</div>
+        <div class="box">Hey I am a box</div>
+        <script>
+            // let div = document.createElement("div");
+            // div.innerHTML = "I have been inserted <b>by harry</b>"
+            // div.setAttribute("class", "created");
+            // document.querySelector(".container").before(div);
+            let cont = document.querySelector(".container")
+            cont.insertAdjacentHTML("beforebegin", "<b> I am under the water. Please h elp me here too much raining.... iuuuuooooo</b>")
+        </script>
+    </div>
+</body>
+
+</html>
